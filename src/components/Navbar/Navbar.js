@@ -13,12 +13,12 @@ const Navbar = () => {
                 <button className="btn btn-primary">3</button>
             </div> */}
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-primary"> CNC Wood Carving</button>
-                <button type="button" class="btn btn-primary">3d Prints</button>
-                <button type="button" class="btn btn-primary">Supplies</button>
+                <button type="button" class="btn btn-outline-light"> CNC Wood Carving</button>
+                <button type="button" class="btn btn-outline-light">3d Prints</button>
+                <button type="button" class="btn btn-outline-light">Supplies</button>
             </div>
             <div>
-            <button type="button" class="btn btn-primary"><i className="bi bi-cart"></i>
+            <button type="button" class="btn btn-outline-light"><i className="bi bi-cart"></i>
                 Carrito</button>
                 
             </div>
