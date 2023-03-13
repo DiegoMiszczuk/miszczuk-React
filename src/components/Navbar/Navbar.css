@@ -3,10 +3,16 @@
     justify-content: space-evenly;
     align-items: center;
     /* background-color: aqua; */
-    background-image: url("./img-navbar/fondo-navbar-4.jpg");
+    background-image: url("./assets/fondo-navbar-4.jpg");
     height: 80px;
 }
 
-.text-blanco{
+/* .text-blanco{
     color: antiquewhite;
+} */
+
+.namePosition{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
