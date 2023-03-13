@@ -1,5 +1,4 @@
 import "./Navbar.css"
-
 import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 
@@ -17,11 +16,11 @@ const Navbar = () => {
                 <button type="button" class="btn btn-outline-light">3d Prints</button>
                 <button type="button" class="btn btn-outline-light">Supplies</button>
             </div>
-            <div>
+            {/* <div>
             <button type="button" class="btn btn-outline-light"><i className="bi bi-cart"></i>
                 Carrito</button>
                 
-            </div>
+            </div> */}
         </nav>
 
 
