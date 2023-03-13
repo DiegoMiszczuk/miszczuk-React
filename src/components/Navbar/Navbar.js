@@ -1,4 +1,5 @@
 import './Navbar.css'
+import '../../general.css'
 import '../../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 import CartWidget from "../CartWidget/CartWidget";
 import logo from './assets/logo.png'
@@ -8,7 +9,7 @@ const Navbar = () => {
         <nav className="Navbar">
             <div className='namePosition'>
                 <img src={logo} alt="logo"/>
-                <h1 className="text-blanco">Mzk Shop</h1>
+                <h1 className="textColorPpal">Mzk Shop</h1>
             </div>
             
             
