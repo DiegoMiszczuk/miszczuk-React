@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getProducts } from "../../asyncMock"
-
+import ItemList from '../ItemList/ItemList'
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -18,17 +18,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
         <div>
             <h1 className="textColorSec">{greeting}</h1>
-            <div>
-                {products.map(products => {
-                    return (
-                        <div key={products.id}>
-                            <h3>{products.name}</h3>
-                            <img src={products.img} alt={products.name}></img>
-                            <p>Precio: ${products.price}</p>
-                        </div>
-                    )
-                })}
-            </div>
+            <ItemList products={products} />
         </div>
     )
 }
