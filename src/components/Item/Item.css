@@ -1,6 +1,10 @@
 .itemStyle{
     border:1px solid black;
     border-radius: 5px;
- 
-    
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+}
+.imgSize{
+    width: 300px;
 }

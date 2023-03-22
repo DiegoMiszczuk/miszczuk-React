@@ -11,7 +11,7 @@ const products = [
     },
     {
         id:'2',
-        name: 'Motorola Moto E13',
+        name: 'Motorola E13',
         price: '10000',
         category: 'celular',
         img: 'https://armoto.vtexassets.com/arquivos/moto-e13-pdp-ecom-render-tofu.png',
@@ -20,7 +20,7 @@ const products = [
     },
     {
         id:'3',
-        name: 'Samsung Galaxy A53',
+        name: 'Samsung A53',
         price: '25000',
         category: 'celular',
         img: 'https://images.samsung.com/is/image/samsung/p6pim/ar/2202/feature/ar-feature---531544794?$FB_TYPE_A_JPG$',
