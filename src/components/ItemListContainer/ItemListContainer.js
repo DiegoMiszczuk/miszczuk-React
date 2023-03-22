@@ -19,7 +19,7 @@ const ItemListContainer = ({ greeting }) => {
         
         <div >
             <h1 className="textColorSec">{greeting}</h1>
-            <div className='listStyle'>
+            <div className='containerStyle'>
                 <ItemList products={products} />
             </div>
             
