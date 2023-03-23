@@ -3,8 +3,12 @@
     border-radius: 5px;
     width: 250px;
     height: 350px;
-    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* justify-content:space-evenly; */
+    
 }
 .imgSize{
-    width: 300px;
+    width: 200px;
 }

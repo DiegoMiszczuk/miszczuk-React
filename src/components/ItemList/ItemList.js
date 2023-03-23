@@ -3,7 +3,7 @@ import './ItemList.css'
 
 const ItemList = ({ products }) => {
     return (
-        <div style={{display:"flex"}}>
+        <div className="listStyle">
             {products.map(product => <Item key={product.id}{...product}/>)}
           
         </div>

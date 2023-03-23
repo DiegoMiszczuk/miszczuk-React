@@ -17,7 +17,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return (
         
-        <div >
+        <div>
             <h1 className="textColorSec">{greeting}</h1>
             <div className='containerStyle'>
                 <ItemList products={products} />

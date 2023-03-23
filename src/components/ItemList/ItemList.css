@@ -1,7 +1,6 @@
 .listStyle{
-    /* display: flex;
-   justify-content: space-between;
-    width: 200px;
-    height: 300px; */
-    /* align-content: center; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }

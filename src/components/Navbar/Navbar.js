@@ -14,9 +14,9 @@ const Navbar = () => {
                 <h1 className="textColorPpal">Mzk Shop</h1>
             </div>
             <div class="btn-group" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-outline-light"> CNC Wood Carving</button>
-                <button type="button" class="btn btn-outline-light">3d Prints</button>
-                <button type="button" class="btn btn-outline-light">Supplies</button>
+                <button type="button" class="btn btn-outline-light">Celulares</button>
+                <button type="button" class="btn btn-outline-light">Tablets</button>
+                <button type="button" class="btn btn-outline-light">Notebooks</button>
             </div>
             <CartWidget />
         </nav>

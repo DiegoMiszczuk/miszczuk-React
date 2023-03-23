@@ -2,17 +2,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: aqua; */
-    background-image: url("./assets/fondo-navbar-4.jpg");
     height: 80px;
+    background-color: gray;
 }
 
-/* .text-blanco{
-    color: antiquewhite;
-} */
+
 
 .namePosition{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+ }
