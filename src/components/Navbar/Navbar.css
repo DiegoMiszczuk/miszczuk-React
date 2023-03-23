@@ -1,9 +1,14 @@
+
+
 .Navbar{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 80px;
-    background-color: gray;
+    background-image: url('../Navbar/fondo\ navbar.jpg');
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: 80% 86%;
 }
 
 

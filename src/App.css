@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-color: rgb(138, 235, 235);
+  background-image: url('../src/assets/appImg/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {

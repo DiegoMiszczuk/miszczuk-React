@@ -1,7 +1,11 @@
 .textColorPpal{
-    color: antiquewhite;
+    color: white;
 }
 
 .textColorSec{
     color: burlywood;
+}
+
+.fontMain{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -1,10 +1,14 @@
+import image1 from './assets/itemImg/iphone12.png'
+import image2 from './assets/itemImg/motoE13.png'
+import image3 from './assets/itemImg/samsungA53.png'
+
 const products = [
     {
         id:'1',
         name: 'iphone 12',
         price: '15000',
         category: 'celular',
-        img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-finish-unselect-gallery-2-202207?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1662129021500',
+        img: image1,
         stock: 30,
         description: 'Pantalla Súper Retina XDRnota, Sistema de doble cámara',
         
@@ -14,7 +18,7 @@ const products = [
         name: 'Motorola E13',
         price: '10000',
         category: 'celular',
-        img: 'https://armoto.vtexassets.com/arquivos/moto-e13-pdp-ecom-render-tofu.png',
+        img: image2,
         stock: 30,
         description: "Audio Dolby Atmos®1 y pantalla HD+ de 6.5 ,Batería duradera de 5000 mAh,Sistema de cámaras con IA"
     },
@@ -23,7 +27,7 @@ const products = [
         name: 'Samsung A53',
         price: '25000',
         category: 'celular',
-        img: 'https://images.samsung.com/is/image/samsung/p6pim/ar/2202/feature/ar-feature---531544794?$FB_TYPE_A_JPG$',
+        img: image3,
         stock: 30,
         description: "Pantalla 120Hz FHD+ sAMOLED, 64MP OIS Cámara, Batería que dura 2 días,Resistente al agua y al polvo"
     },
@@ -32,7 +36,7 @@ const products = [
         name: 'iphone 12',
         price: '15000',
         category: 'celular',
-        img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-finish-unselect-gallery-2-202207?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1662129021500',
+        img: image1,
         stock: 30,
         description: 'Pantalla Súper Retina XDRnota, Sistema de doble cámara',
         
@@ -42,7 +46,7 @@ const products = [
         name: 'Motorola E13',
         price: '10000',
         category: 'celular',
-        img: 'https://armoto.vtexassets.com/arquivos/moto-e13-pdp-ecom-render-tofu.png',
+        img: image2,
         stock: 30,
         description: "Audio Dolby Atmos®1 y pantalla HD+ de 6.5 ,Batería duradera de 5000 mAh,Sistema de cámaras con IA"
     },
@@ -51,10 +55,10 @@ const products = [
         name: 'Samsung A53',
         price: '25000',
         category: 'celular',
-        img: 'https://images.samsung.com/is/image/samsung/p6pim/ar/2202/feature/ar-feature---531544794?$FB_TYPE_A_JPG$',
+        img: image3,
         stock: 30,
         description: "Pantalla 120Hz FHD+ sAMOLED, 64MP OIS Cámara, Batería que dura 2 días,Resistente al agua y al polvo"
-    }
+    },
 ]
 
 export const getProducts = () => {
