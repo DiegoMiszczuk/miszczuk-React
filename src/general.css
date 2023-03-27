@@ -9,3 +9,6 @@
 .fontMain{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.flex{
+    display: flex;
+}
