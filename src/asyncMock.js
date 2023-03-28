@@ -20,7 +20,7 @@ const products = [
         category: 'Celular',
         img: image2,
         stock: 30,
-        description: "Audio Dolby Atmos®1 y pantalla HD+ de 6.5 ,Batería duradera de 5000 mAh,Sistema de cámaras con IA"
+        description: "Audio Dolby Atmos®1 y pantalla HD+ de 6.5",
     },
     {
         id:'3',
@@ -29,7 +29,7 @@ const products = [
         category: 'Celular',
         img: image3,
         stock: 30,
-        description: "Pantalla 120Hz FHD+ sAMOLED, 64MP OIS Cámara, Batería que dura 2 días,Resistente al agua y al polvo"
+        description: "Pantalla 120Hz FHD+ sAMOLED, 64MP OIS Cámara,Batería que dura 2 días,Resistente al agua y al polvo"
     },
     // {
     //     id:'4',

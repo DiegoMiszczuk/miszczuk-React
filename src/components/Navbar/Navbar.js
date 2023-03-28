@@ -9,9 +9,9 @@ import logo from './assets/logo.png'
 const Navbar = () => {
     return (
         <nav className="Navbar fontMain">
-            <div className='namePosition'>
-                <img src={logo} alt="logo" />
-                <h1 className="textColorPpal">Mzk Shop</h1>
+            <div className="flex">
+                <img style={{Width: "10"}} src={logo} alt="logo" />
+                <h1 className=" namePosition textColorPpal">Mzk Shop</h1>
             </div>
             <div className="btn-group" role="group" aria-label="Basic example">
                 <button type="button" className="btn btn-outline-light">Celulares</button>

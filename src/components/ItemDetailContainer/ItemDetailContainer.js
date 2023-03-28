@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
     }, [])
 
     return(
-        <div className="itemDetailContainerStyle">
+        <div className="flex center">
 
             <ItemDetail {...products}/> 
         </div>
