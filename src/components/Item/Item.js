@@ -8,7 +8,10 @@ const Item = ({id, name, img, price, description}) => {
             <h3 className='marginTop'>{name}</h3>
             <img className='imgSize' src={img} alt={name} ></img>
             <p>Precio: ${price}</p>
+            <div>
             <Link to={`/item/${id}`} type="button" className="btn btn-outline-light">Ver Detalle</Link>
+            </div>
+            
         </div> 
     )
 }
