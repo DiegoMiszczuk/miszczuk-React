@@ -2,16 +2,18 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import './ItemDetailContainer.css'
 import { useState, useEffect } from "react";
 import { getProductsById } from "../../asyncMock";
+import { useParams } from "react-router-dom";
+
 
 
 
 const ItemDetailContainer = () => {
     const [products, setProducts] = useState()
    
-     
+    const { itemId } = useParams()
 
     useEffect( () => {
-        getProductsById('2')
+        getProductsById(itemId)
             .then(products =>{
                 setProducts(products)
         })
@@ -19,7 +21,7 @@ const ItemDetailContainer = () => {
             console.log(err)
         })
 
-    }, [])
+    }, [itemId])
 
     return(
         <div className="flex center">

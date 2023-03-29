@@ -11,5 +11,7 @@
 }
 .flex{
     display: flex;
-
+}
+.textDecNone{
+    text-decoration: none;
 }
