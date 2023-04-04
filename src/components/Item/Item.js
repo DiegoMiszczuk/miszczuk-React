@@ -1,6 +1,6 @@
 import './Item.css'
 import '../../general.css'
-import { Link, link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Item = ({id, name, img, price, description}) => {
     return (
@@ -11,7 +11,6 @@ const Item = ({id, name, img, price, description}) => {
             <div>
             <Link to={`/item/${id}`} type="button" className="btn btn-outline-light">Ver Detalle</Link>
             </div>
-            
         </div> 
     )
 }
