@@ -14,9 +14,9 @@ const Navbar = () => {
                 <h1 className=" namePosition textColorPpal">Mzk Shop</h1>
             </Link>
             <div className="btn-group" role="group" aria-label="Basic example">
-                <Link to={'/category/celular'} type="button" className="btn btn-outline-light">Celulares</Link>
-                <Link to={'/category/tablet'} type="button" className="btn btn-outline-light">Tablets</Link>
-                <Link to={'/category/notebook'} type="button" className="btn btn-outline-light">Notebooks</Link>
+                <Link to={'/category/Celulares'} type="button" className="btn btn-outline-light">Celulares</Link>
+                <Link to={'/category/Tablets'} type="button" className="btn btn-outline-light">Tablets</Link>
+                <Link to={'/category/Notebooks'} type="button" className="btn btn-outline-light">Notebooks</Link>
             </div>
             <CartWidget />
         </nav>

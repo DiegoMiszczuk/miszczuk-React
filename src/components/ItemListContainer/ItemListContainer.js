@@ -6,7 +6,7 @@ import './ItemListContainer.css'
 
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
-    const { categoryId} = useParams()
+    const { categoryId } = useParams()
 
     useEffect(() => {
         const asyncFunction = categoryId ? getProductsByCategory : getProducts
@@ -23,7 +23,7 @@ const ItemListContainer = ({ greeting }) => {
     return (
         
         <div className='fontMain textColorPpal'>
-            <h1 className="marginTitle">{greeting}</h1>
+            <h1 className="marginTitle">{greeting}{categoryId}</h1>
             <div className='containerStyle'>
                 <ItemList products={products} />
             </div>
