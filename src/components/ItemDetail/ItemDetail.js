@@ -1,14 +1,21 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
+import { useState } from 'react'
 
 
 const ItemDetail = ({id,name, img, price, category, stock, description}) => {
+    // const [inputType, setInputType] = useState('input')
+    const [quantity, setQuantity] = useState(0)
 
-    const handleOnAdd = (quantity) => {
+    // const ItemCount = inputType === 'input' ? InputCount : buttonCount
+
+    const handleOnAdd = (count) => {
         const productToAdd = {
-            id, name, price, quantity
+            id, name, price, count
         }
-        console.log(productToAdd)
+        console.log(count)
+
+        setQuantity(count)
     }
     return (
         <div className="itemDetailStyle">
@@ -21,7 +28,13 @@ const ItemDetail = ({id,name, img, price, category, stock, description}) => {
                 <h5>Precio: {price}</h5>
             </div>
             <footer className='ItemFooter'>
-                <ItemCount onAdd={handleOnAdd} stock={stock} />
+                {
+                    quantity === 0 ? (<ItemCount onAdd={handleOnAdd} stock={stock} />
+                    ) : (
+                        <button type="button" className="btn btn-outline-light marginTopButton">Finalizar compra</button>
+                    )
+                }
+                
             </footer>
         </div>
     )
