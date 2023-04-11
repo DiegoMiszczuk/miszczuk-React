@@ -2,7 +2,9 @@ import './Item.css'
 import '../../general.css'
 import { Link } from 'react-router-dom'
 
+
 const Item = ({id, name, img, price, description}) => {
+  
     return (
        <div className="itemStyle fontMain background ">
             <h3 className='marginTop'>{name}</h3>
