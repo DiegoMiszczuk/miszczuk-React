@@ -1,11 +1,10 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
-import { useState } from 'react'
-import { useContext } from 'react'
-import { Context } from '../../context/CartContext'
+import { useCart } from '../../context/CartContext'
 
-const ItemDetail = ({id, name, img, price, category, stock, description}) => {
-    const { addItem } = useContext(Context)
+const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
+
+    const { addItem } = useCart()
     // const [inputType, setInputType] = useState('input')
     // const [quantity, setQuantity] = useState(0)
 
@@ -21,7 +20,7 @@ const ItemDetail = ({id, name, img, price, category, stock, description}) => {
     }
     return (
         <div className="itemDetailStyle">
-            <img className='imgSize' src={img} alt={name}/>
+            <img className='imgSize' src={img} alt={name} />
             <div className='textColorPpal'>
                 <h3 >{name}</h3>
                 <p>{description}</p>
@@ -37,7 +36,7 @@ const ItemDetail = ({id, name, img, price, category, stock, description}) => {
                     //     <button type="button" className="btn btn-outline-light marginTopButton">Finalizar compra</button>
                     // )
                 }
-                
+
             </footer>
         </div>
     )

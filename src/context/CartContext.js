@@ -1,27 +1,43 @@
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-export const Context = createContext('valor inicial')
+const CartContext = createContext('valor inicial')
 
-export const CartProvider = ( {children} ) => {
-    const [ cart, setCart ] = useState([])
+export const CartProvider = ({ children }) => {
+  const [cart, setCart] = useState([])
   console.log(cart)
 
   const addItem = (productToAdd) => {
-    if(!isInCart(productToAdd.id)){
+    if (!isInCart(productToAdd.id)) {
       setCart(prev => [...prev, productToAdd])
-    }else {
+    } else {
       console.log('no se agrega por que esta ')
     }
   }
 
-   const isInCart = (id) => {
+  const isInCart = (id) => {
     return cart.some(prod => prod.id === id)
-   }
+  }
+
+  const getTotalQuantity = () => {
+    let totalQuantity = 0
+
+    cart.forEach(prod =>{
+      totalQuantity += prod.quantity
+    })
+
+    return totalQuantity
+  }
+
+  const totalQuantity = getTotalQuantity()
 
 
-    return(
-         <Context.Provider value={{cart, addItem}}>
-            {children}
-         </Context.Provider>
-    )
+  return (
+    <CartContext.Provider value={{ cart, addItem, totalQuantity }}>
+      {children}
+    </CartContext.Provider>
+  )
+}
+
+export const useCart = () => {
+  return useContext(CartContext)
 }
