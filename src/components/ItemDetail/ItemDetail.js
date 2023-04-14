@@ -1,10 +1,11 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCart } from '../../context/CartContext'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 
-    const { addItem } = useCart()
+    const { addItem, isInCart } = useCart()
     // const [inputType, setInputType] = useState('input')
     // const [quantity, setQuantity] = useState(0)
 
@@ -30,7 +31,12 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
             </div>
             <footer className='ItemFooter'>
                 {
-                    <ItemCount onAdd={handleOnAdd} stock={stock} />
+                    isInCart(id) ? (
+                        <Link className="btn btn-outline-light marginTopButton" to='/cart'>Finalizar Compra</Link>
+                    ) : (
+                        <ItemCount onAdd={handleOnAdd} stock={stock} />
+                    )
+                    
                     // quantity === 0 ? (<ItemCount onAdd={handleOnAdd} stock={stock} />
                     // ) : (
                     //     <button type="button" className="btn btn-outline-light marginTopButton">Finalizar compra</button>
