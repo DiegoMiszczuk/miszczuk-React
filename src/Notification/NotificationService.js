@@ -32,7 +32,7 @@ const Notification = ({type, message }) => {
     setNotificationData({ type, text });
     setTimeout(() => {
       setNotification({ type, text: "" });
-    }, 3000);
+    }, 4000);
   };
 
   return (
