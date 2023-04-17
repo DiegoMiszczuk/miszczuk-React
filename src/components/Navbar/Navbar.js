@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-body-tertiary navbarBackground">
             <div className="container-fluid">
                 <Link to={"/"} className="flex textDecNone">
-                <img style={{Width: "10"}} src={logo} alt="logo" />
+                <img style={{Width: "10",height:'60px'}} src={logo} alt="logo" />
                 <h1 className=" namePosition textColorPpal">Mzk Shop</h1>
                 </Link>
                 <button className="navbar-toggler navbar-dark " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

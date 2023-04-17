@@ -17,7 +17,11 @@
 .namePosition{
     display: flex;
     justify-content: right;
-    margin-top: 40px;
+    /* margin-top: 40px; */
  }
-
+@media (min-width:900px) {
+    .Navbar{
+        height: 80px;
+    }
+}
 
