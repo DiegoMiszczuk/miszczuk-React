@@ -5,18 +5,18 @@
     border: 2px white;
     flex-direction: row;
 }
-.itemStyle{
+.item{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-}
+} 
 
-.rowCart{
+ .rowCart{
     background-color: darkslategrey;
     border: 5px solid white;
 }
 
 .border{
     border: 5px  white;
-}
+} 
 

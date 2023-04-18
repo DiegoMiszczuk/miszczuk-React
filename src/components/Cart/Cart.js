@@ -19,7 +19,7 @@ const Cart = () => {
                             <div className="itemCartStyle" key={prod.id}>
                                 
                                 <h2 className="ItemStyle">{prod.name}</h2>
-                                <h2 className="ItemStyle">Cantidad: {prod.quantity}</h2>
+                                <h2 className="ItemStyle">{prod.quantity}</h2>
                                 <h2 className="ItemStyle">${prod.price} x Unidad</h2>
                             </div>
                         )
@@ -28,7 +28,7 @@ const Cart = () => {
             </div>
 
             <h1>Total de la compra ${total}</h1>
-            <Link to='/checkout' className="Option">Checkout</Link>
+            <Link className="btn btn-outline-light marginTopButton" to='/checkout' >Checkout</Link>
         </div>
     )
 }
