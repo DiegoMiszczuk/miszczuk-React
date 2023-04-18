@@ -1,0 +1,22 @@
+.itemCartStyle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border: 2px white;
+    flex-direction: row;
+}
+.itemStyle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.rowCart{
+    background-color: darkslategrey;
+    border: 5px solid white;
+}
+
+.border{
+    border: 5px  white;
+}
+

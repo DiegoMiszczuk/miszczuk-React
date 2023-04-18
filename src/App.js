@@ -5,6 +5,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Navbar from './components/Navbar/Navbar';
 import { CartProvider } from './context/CartContext';
+import Cart from './components/Cart/Cart';
 
 
 
@@ -20,7 +21,7 @@ function App() {
               <Route path='/' element={<ItemListContainer greeting={'Nuestros Productos'}/>}></Route>
               <Route path='/category/:categoryId' element={<ItemListContainer greeting={'Productos por Categoria: '}/>}></Route>
               <Route path='/item/:itemId' element={<ItemDetailContainer/>}></Route>
-              <Route path="/cart" element={<h1>Cart</h1>}/>
+              <Route path="/cart" element={<Cart/>}/>
               <Route path="/checkout" element={<h1>Checkout</h1>}/>
             </Routes>
           </CartProvider>

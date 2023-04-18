@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
                 console.log(snapshot)
                 const data = snapshot.data()
                 const productAdapted = { id: snapshot.id, ...data}
-                setProducts(productAdapted)
+                setProducts (productAdapted)
             })
             .catch(error => {
                 console.log(error)
