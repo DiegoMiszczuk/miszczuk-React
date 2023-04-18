@@ -1,12 +1,13 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, memo } from 'react'
 import { useParams } from 'react-router-dom'
 // import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
 import Loading from '../Spinner/Spinner'
-import { getDocs, collection } from 'firebase/firestore'
+import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../../services/firebaseConfig'
 
+const ItemListMemo = memo(ItemList)
 
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
@@ -14,13 +15,26 @@ const ItemListContainer = ({ greeting }) => {
     const [ loading, setLoading] = useState(true)
 
     useEffect(() => {
-        // setLoading(true)
+        setLoading(true)
 
-        const productsRef = collection(db, 'products')
+        const productsRef = categoryId 
+            ? query(collection(db, 'products'), where('category', '==', categoryId))
+            : collection(db, 'products')
 
         getDocs(productsRef) 
             .then(snapshot =>{
                 console.log(snapshot)
+                const productAdapted = snapshot.docs.map(doc => {
+                    const data = doc.data()
+                    return { id: doc.id, ...data}
+                })
+                setProducts(productAdapted)
+            })
+            .catch(error => {
+                console.log(error)
+            })
+            .finally(() => {
+                setLoading(false)
             })
         },[categoryId])
 
@@ -37,9 +51,8 @@ const ItemListContainer = ({ greeting }) => {
         <div className='fontMain textColorPpal'>
             <h1 className="marginTitle">{greeting}{categoryId}</h1>
             <div className='containerStyle'>
-                <ItemList products={products} />
+                <ItemListMemo products={products} />
             </div>
-            
         </div>
     )
 }
