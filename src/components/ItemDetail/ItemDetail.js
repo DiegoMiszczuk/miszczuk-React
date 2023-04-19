@@ -24,7 +24,7 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
     }
     return (
         <div className="itemDetailStyle">
-            <img className='imgSize' src={img} alt={name} />
+            <img className='sizeImg' src={img} alt={name} />
             <div className='textColorPpal'>
                 <h3 >{name}</h3>
                 <p>{description}</p>
@@ -35,7 +35,7 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
             <footer className='ItemFooter'>
                 {
                     isInCart(id) ? (
-                        <Link className="btn btn-outline-light marginTopButton" to='/cart'>Finalizar Compra</Link>
+                        <Link className="btn btn-outline-dark marginTopButton" to='/cart'>Finalizar Compra</Link>
                     ) : (
                         <ItemCount onAdd={handleOnAdd} stock={stock} />
                     )

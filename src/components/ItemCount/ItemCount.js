@@ -21,13 +21,13 @@ const ItemCount = ({stock = 0, initial = 1, onAdd})=> {
        <div className='Counter'>          
             <div className='Controls TextColorPpal'>
             
-                <button className="btn btn-outline-light" onClick={decrement}>-</button>
+                <button className="btn btn-outline-dark" onClick={decrement}>-</button>
                 <h4 className='Number '>{quantity}</h4>
-                <button className="btn btn-outline-light" onClick={increment}>+</button>
+                <button className="btn btn-outline-dark" onClick={increment}>+</button>
           
             </div>
             <div>
-                <button type="button" className="btn btn-outline-light"onClick={() => onAdd(quantity)}>Agregar al carrito</button>
+                <button type="button" className="btn btn-outline-dark"onClick={() => onAdd(quantity)}>Agregar al carrito</button>
             </div>
        </div>
    )
