@@ -28,12 +28,13 @@ const Notification = ({type, message }) => {
         text: ''
       })
     
-  const setNotification = (type, text) => {
-    setNotificationData({ type, text });
-    setTimeout(() => {
-      setNotification({ type, text: "" });
-    }, 4000);
-  };
+      const setNotification = (type, text, time) => {
+        console.log(time)
+        setNotificationData({ type, text })
+        setTimeout(() => {
+          setNotification({ type, text: ''})
+        }, time ? time * 1000 : 4000)
+      }
 
   return (
     <NotificationContext.Provider value={{ setNotification }}>

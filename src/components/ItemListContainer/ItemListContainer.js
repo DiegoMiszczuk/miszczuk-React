@@ -1,18 +1,18 @@
 import { useEffect, useState, memo } from 'react'
 import { useParams } from 'react-router-dom'
-// import { getProducts, getProductsByCategory } from "../../asyncMock"
 import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
 import Loading from '../Spinner/Spinner'
 import { getDocs, collection, query, where } from 'firebase/firestore'
-import { db } from '../../services/firebaseConfig'
-
+import { db } from '../../services/firebase/firebaseConfig'
+import { useNotification } from '../../Notification/NotificationService'
 const ItemListMemo = memo(ItemList)
 
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     const { categoryId } = useParams()
     const [ loading, setLoading] = useState(true)
+    const { setNotification } = useNotification() 
 
     useEffect(() => {
         setLoading(true)
@@ -31,7 +31,7 @@ const ItemListContainer = ({ greeting }) => {
                 setProducts(productAdapted)
             })
             .catch(error => {
-                console.log(error)
+                setNotification('error', 'hubo un error obteniendo los productos')             
             })
             .finally(() => {
                 setLoading(false)

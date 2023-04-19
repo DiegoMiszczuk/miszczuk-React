@@ -1,6 +1,8 @@
 import { useCart } from "../../context/CartContext"
 import { Link } from 'react-router-dom'
 import '../Cart/Cart.css'
+
+
 const Cart = () => {
     const { cart, total } = useCart()
 

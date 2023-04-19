@@ -5,7 +5,8 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Loading from "../Spinner/Spinner";
 import { getDoc, doc } from "firebase/firestore";
-import { db } from "../../services/firebaseConfig";
+import { db } from "../../services/firebase/firebaseConfig";
+
 
 const ItemDetailContainer = () => {
     const [products, setProducts] = useState()
