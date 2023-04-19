@@ -6,6 +6,7 @@ import Loading from '../Spinner/Spinner'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
 import { useNotification } from '../../Notification/NotificationService'
+
 const ItemListMemo = memo(ItemList)
 
 const ItemListContainer = ({ greeting }) => {

@@ -7,7 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import { CartProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
-
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
           </CartProvider>
         </NotificationProvider>  
       </BrowserRouter>
+      <Footer/>
       
     </div>
   ); 

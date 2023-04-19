@@ -3,6 +3,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { useCart } from '../../context/CartContext'
 import { Link } from 'react-router-dom'
 import { useNotification } from '../../Notification/NotificationService'
+import 'bootstrap/dist/css/bootstrap.css'
 
 const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 

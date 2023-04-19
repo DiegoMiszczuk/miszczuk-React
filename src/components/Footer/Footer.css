@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+
+.footerBackground{
+    background-color:#6ca6a3;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    height: 80px;
+   }

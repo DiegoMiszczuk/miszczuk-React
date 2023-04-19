@@ -10,6 +10,8 @@
     /* height: 300px; */
     margin-top: 80px;
     margin-bottom: 70px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .sizeImg{
     max-width: 600px;

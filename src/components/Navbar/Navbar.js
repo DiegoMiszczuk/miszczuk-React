@@ -1,4 +1,3 @@
-
 import "./Navbar.css"
 import './Navbar.css'
 import '../../general.css'
@@ -21,9 +20,9 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div className="navbar-nav ms-auto center ">
-                        <Link to={'/category/Celular'} className="nav-link active text-light" aria-current="page" >Celulares</Link>
-                        <Link to={'/category/Tablets'} className="nav-link text-light" >Tablets</Link>
-                        <Link to={'/category/Notebooks'} className="nav-link text-light" >Notebooks</Link>
+                        <Link to={'/category/Celular'} className="nav-link active text-dark" aria-current="page" >Celulares</Link>
+                        <Link to={'/category/Tablets'} className="nav-link text-dark" >Tablets</Link>
+                        <Link to={'/category/Notebooks'} className="nav-link text-dark" >Notebooks</Link>
                         <CartWidget className="nav-link navbar-nav " />
                     </div>
                 </div>
