@@ -31,8 +31,7 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
                 <p>Tipo: {category}</p>
                 <p>Cantidad en Stock: {stock}</p>
                 <h5>Precio: {price}</h5>
-            </div>
-            <footer className='ItemFooter'>
+                <footer className='ItemFooter'>
                 {
                     isInCart(id) ? (
                         <Link className="btn btn-outline-dark marginTopButton" to='/cart'>Finalizar Compra</Link>
@@ -47,6 +46,8 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
                 }
 
             </footer>
+            </div>
+           
         </div>
     )
 }
