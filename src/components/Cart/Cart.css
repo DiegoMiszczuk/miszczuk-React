@@ -3,7 +3,7 @@
     align-items: flex-start;
     justify-content: space-evenly;
     border: 2px white;
-    flex-direction: row;
+   
 }
 .item{
     display: flex;
@@ -22,4 +22,7 @@
 
 .size{
     min-height: 100vh;
+    /* height: 100vh;
+    width: 100vw; */
+    /* max-height: 100vh; */
 }

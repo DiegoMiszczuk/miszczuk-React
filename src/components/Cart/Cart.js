@@ -7,7 +7,7 @@ const Cart = () => {
     const { cart, total } = useCart()
 
     return (
-        <div className="textColorPpal">
+        <div className="textColorPpal size">
             <h1>Cart View</h1>
             <div className="rowCart itemCartStyle">
                 <h2>Item</h2>
