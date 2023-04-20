@@ -20,3 +20,6 @@
     border: 5px  white;
 } 
 
+.size{
+    min-height: 100vh;
+}

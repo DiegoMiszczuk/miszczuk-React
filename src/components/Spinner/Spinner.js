@@ -4,9 +4,7 @@ import '../Spinner/Spinner.css'
 
 function Loading() {
   return (
-    <Spinner  animation="border" role="status" variant="primary" style={{width:'60px',height:'60px' }}>
-      {/* <span className="visually-hidden textColorPpal ">Loading...</span> */}
-    </Spinner>
+    <Spinner  animation="border" role="status" variant="primary" style={{width:'30px',height:'30px' }}></Spinner>
   );
 }
 
