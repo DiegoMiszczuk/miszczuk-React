@@ -6,8 +6,8 @@ import { useState } from 'react'
 import { useNotification } from '../../Notification/NotificationService'
 import Loading from '../Spinner/Spinner'
 import { useNavigate } from 'react-router-dom'
-
-
+import ContactForm from '../ContactForm/ContactForm'
+import './Checkout.css'
 
 const Checkout = () => {
     const [orderId, setOrderId] = useState('')
@@ -24,11 +24,7 @@ const Checkout = () => {
         try {
             setLoading(true)
             const objOrder = {
-                Buyer:{
-                    name: 'diego',
-                    phone: '123151513',
-                    email: 'sarasa@sarasa.com'
-                },
+                Buyer: userData,
                 items: cart,
                 total
                 
@@ -98,11 +94,12 @@ const Checkout = () => {
         
     }
     return (
-        <div className='textColorPpal'> 
+        <div className='textColorPpal checkoutStyle'> 
             <h1>Checkout</h1>
             <h2>Ingrese sus datos</h2>
+            <ContactForm onConfirm={createOrder}/>
             {/* <form onConfirm{createOrder}></form> */}
-            <button className="btn btn-outline-light marginTopButton" onClick={createOrder}>Crear Orden</button>
+            {/* <button className="btn btn-outline-light marginTopButton" onClick={createOrder}>Crear Orden</button> */}
         </div>
     )
 }

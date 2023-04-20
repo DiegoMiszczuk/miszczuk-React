@@ -45,10 +45,7 @@ const Navbar = () => {
                             categories.map(cat => {
                                 return<NavLink key={cat.id} to={`/category/${cat.slug}`} className="nav-link active text-dark" aria-current="page" >{cat.label}</NavLink>
                             })
-                        }
-                        {/* <Link to={'/category/Celular'} className="nav-link active text-dark" aria-current="page" >Celulares</Link>
-                        <Link to={'/category/Tablets'} className="nav-link text-dark" >Tablets</Link>
-                        <Link to={'/category/Notebooks'} className="nav-link text-dark" >Notebooks</Link> */}
+                        }                      
                         <CartWidget className="nav-link navbar-nav " />
                     </div>
                 </div>

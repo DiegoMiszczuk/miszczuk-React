@@ -1,0 +1,10 @@
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    color: aqua;
+    width: 100px;
+   
+    align-items: center;
+   
+    
+}
