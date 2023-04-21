@@ -16,7 +16,7 @@ Antes de poder utilizar el proyecto, necesitas configurar la conexión con Fireb
 4. En la sección "Configuración" del proyecto, copia las credenciales de Firebase y pégalo en el archivo `.env` del proyecto. 
  
 
->REACT_APP_FIREBASE_API_KEY=<API_KEY
+REACT_APP_FIREBASE_API_KEY=<API_KEY
 REACT_APP_FIREBASE_AUTH_DOMAIN=<AUTH_DOMAIN REACT_APP_FIREBASE_PROJECT_ID=<PROJECT_ID> REACT_APP_FIREBASE_STORAGE_BUCKET=<STORAGE_BUCKET> REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<MESSAGING_SENDER_ID> REACT_APP_FIREBASE_APP_ID=<APP_ID>  
 
 ## Uso 
@@ -35,7 +35,7 @@ Esto iniciará el servidor local en
 
 ## Descripción
 El ecommerce cuenta con categorías dinámicas, lo que te permite editar las categorias
-desde la db, para asi modificar o agregar diferentes categorías de productos de manera fácil y rápida y poder reutilizar el proyecto para cualquier tipo de producto. Además, el proyecto cuenta con funciones desarrolladas para modificar el carrito de compras en cualquier instancia antes de realizar el checkout. Esto te permite agregar o eliminar productos del carrito en cualquier momento antes de finalizar tu compra. 
+desde la db, para asi modificar o agregar diferentes categorías de productos de manera fácil, rápida y poder reutilizar el proyecto para cualquier tipo de producto. Además, el proyecto cuenta con funciones desarrolladas para modificar el carrito de compras en cualquier instancia antes de realizar el checkout. Esto te permite agregar o eliminar productos del carrito en cualquier momento antes de finalizar tu compra. 
 
 ## Contribuciones 
 Si deseas contribuir a este proyecto, por favor abre un pull request y describe los cambios que deseas realizar.
