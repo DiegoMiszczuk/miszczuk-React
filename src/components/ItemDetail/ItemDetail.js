@@ -1,14 +1,13 @@
 import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { useCart } from '../../context/CartContext'
-import { Link } from 'react-router-dom'
 import { useNotification } from '../../Notification/NotificationService'
 import 'bootstrap/dist/css/bootstrap.css'
 
 const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 
     const {setNotification} = useNotification()
-    const { addItem, isInCart, getProductQuantity } = useCart()
+    const { addItem, getProductQuantity } = useCart()
     // const [inputType, setInputType] = useState('input')
     // const [quantity, setQuantity] = useState(0)
 
@@ -16,7 +15,7 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, quantity, stock
+            id, name, price, quantity, stock, img
         }
         // console.log(productToAdd)
         addItem(productToAdd)

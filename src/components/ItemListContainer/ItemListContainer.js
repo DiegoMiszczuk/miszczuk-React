@@ -37,7 +37,7 @@ const ItemListContainer = ({ greeting }) => {
             .finally(() => {
                 setLoading(false)
             })
-        },[categoryId])
+        },[categoryId,setNotification])
 
     console.log(products)
 
