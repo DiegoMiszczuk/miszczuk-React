@@ -1,5 +1,76 @@
 # Ecommerce App
 
+## _React Course Coderhouse Commission 39610_
+Ecommerce App
+
+Technology sales Ecommerce  
+ 
+This project is an ecommerce developed in React and Bootstrap. The database is hosted on Firebase.
+## Facility 
+1. Clone this repository to your local machine.
+2. Open a terminal and navigate to the root folder of the project.
+3. Run the following command to install the project dependencies:
+```sh
+npm Install
+```
+
+## Setting
+Before you can use the project, you need to set up the connection to Firebase. To do this, follow the steps below:
+1. Create a Firebase account if you don't already have one.
+2. Create a new project in Firebase and enable email and password authentication.
+3. Create a database in Firestore.
+4. In the "Settings" section of the project, copy the Firebase credentials and paste it into the project's .env file.
+
+ 
+```sh
+REACT_APP_FIREBASE_API_KEY=<API_KEY
+```
+```sh
+REACT_APP_FIREBASE_AUTH_DOMAIN=<AUTH_DOMAIN
+```
+```sh
+REACT_APP_FIREBASE_PROJECT_ID=<PROJECT_ID
+```
+```sh
+REACT_APP_FIREBASE_STORAGE_BUCKET=<STORAGE_BUCKET>
+```
+```sh
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<MESSAGING_SENDER_ID>
+```
+```sh
+REACT_APP_FIREBASE_APP_ID=<APP_ID>
+```
+
+
+## Use
+To start the project, run the following command:
+
+```sh
+npm start
+```  
+
+This will start the local server at
+```sh
+`http://localhost:3000`
+```
+
+>you can access it from your web browser.
+
+## Description
+Ecommerce has dynamic categories, which allows you to edit the categories from the db, in order to modify or add different product categories easily and quickly, and to be able to reuse the project for any type of product. In addition, the project has functions developed to modify the shopping cart in any instance before checking out. This allows you to add or remove products from the cart at any time before finalizing your purchase. 
+
+## Contributions 
+If you wish to contribute to this project, please open a pull request and describe the changes you wish to make.
+
+## Issues
+If you find any problems with the project, please open an issue in this repository.
+
+
+
+# --Español--
+
+# Ecommerce App
+
 ## _Curso de React Coderhouse Comision 39610_
  Ecommerce de venta de tecnología 
  
