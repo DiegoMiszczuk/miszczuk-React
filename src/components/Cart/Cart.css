@@ -1,9 +1,19 @@
 .itemCartStyle{
     display: flex;
-    align-items: flex-start;
+    /* align-items: center; */
     justify-content: space-evenly;
     border: 2px white;
+    align-content: center;
+
+
    
+   
+}
+.caca{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    align-content: center;
 }
 .item{
     display: flex;

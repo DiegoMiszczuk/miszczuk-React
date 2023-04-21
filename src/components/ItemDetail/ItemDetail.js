@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 
     const {setNotification} = useNotification()
-    const { addItem, isInCart } = useCart()
+    const { addItem, isInCart, getProductQuantity } = useCart()
     // const [inputType, setInputType] = useState('input')
     // const [quantity, setQuantity] = useState(0)
 
@@ -16,13 +16,16 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
-            id, name, price, quantity
+            id, name, price, quantity, stock
         }
         // console.log(productToAdd)
         addItem(productToAdd)
         setNotification('success',`Se agrego correctamente ${quantity} ${name}`)
         // setQuantity(quantity)
     }
+
+    const productQuantity = getProductQuantity(id)
+
     return (
         <div className="itemDetailStyle">
             <img className='sizeImg' src={img} alt={name} />
@@ -34,17 +37,17 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
                 <h5>Precio: {price}</h5>
                 <footer className='ItemFooter'>
                 {
-                    isInCart(id) ? (
-                        <Link className="btn btn-outline-dark marginTopButton" to='/cart'>Finalizar Compra</Link>
-                    ) : (
-                        <ItemCount onAdd={handleOnAdd} stock={stock} />
-                    )
+                    // isInCart(id) ? (
+                    //     <Link className="btn btn-outline-dark marginTopButton" to='/cart'>Finalizar Compra</Link>
+                    // ) : (
+                        <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity || 1} />
+                    
                     
                     // quantity === 0 ? (<ItemCount onAdd={handleOnAdd} stock={stock} />
                     // ) : (
                     //     <button type="button" className="btn btn-outline-light marginTopButton">Finalizar compra</button>
                     // )
-                }
+}
 
             </footer>
             </div>

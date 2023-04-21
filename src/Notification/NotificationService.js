@@ -29,7 +29,7 @@ const Notification = ({type, message }) => {
       })
     
       const setNotification = (type, text, time) => {
-        console.log(time)
+      
         setNotificationData({ type, text })
         setTimeout(() => {
           setNotification({ type, text: ''})
