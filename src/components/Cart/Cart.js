@@ -19,7 +19,7 @@ const Cart = () => {
                     cart.map(prod => {
                         return (
                             <div className=" caca" key={prod.id}>
-                                
+                                <img style={{width:'40px',height:'40px' }} className='sizeImg' src={prod.img} alt={prod.name} />
                                 <h2 className="ItemStyle">{prod.name}</h2>
                                 <h2 className="ItemStyle">{prod.quantity}</h2>
                                 <h2 className="ItemStyle">${prod.price} x Unidad</h2>
