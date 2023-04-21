@@ -15,9 +15,25 @@ Antes de poder utilizar el proyecto, necesitas configurar la conexión con Fireb
 3. Crea una base de datos en Firestore. 
 4. En la sección "Configuración" del proyecto, copia las credenciales de Firebase y pégalo en el archivo `.env` del proyecto. 
  
-
+```sh
 REACT_APP_FIREBASE_API_KEY=<API_KEY
-REACT_APP_FIREBASE_AUTH_DOMAIN=<AUTH_DOMAIN REACT_APP_FIREBASE_PROJECT_ID=<PROJECT_ID> REACT_APP_FIREBASE_STORAGE_BUCKET=<STORAGE_BUCKET> REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<MESSAGING_SENDER_ID> REACT_APP_FIREBASE_APP_ID=<APP_ID>  
+```
+```sh
+REACT_APP_FIREBASE_AUTH_DOMAIN=<AUTH_DOMAIN
+```
+```sh
+REACT_APP_FIREBASE_PROJECT_ID=<PROJECT_ID
+```
+```sh
+REACT_APP_FIREBASE_STORAGE_BUCKET=<STORAGE_BUCKET>
+```
+```sh
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=<MESSAGING_SENDER_ID>
+```
+```sh
+REACT_APP_FIREBASE_APP_ID=<APP_ID>
+```
+
 
 ## Uso 
 Para iniciar el proyecto, ejecuta el siguiente comando: 
