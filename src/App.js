@@ -8,7 +8,7 @@ import { CartProvider } from './context/CartContext';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
-
+import CarouselFadeExample from './components/Carousel/Carousel'
 
 function App() {
    return (
@@ -26,8 +26,9 @@ function App() {
             </Routes>
           </CartProvider>
         </NotificationProvider>  
+        <Footer/>
       </BrowserRouter>
-      <Footer/>
+     
       
     </div>
   ); 

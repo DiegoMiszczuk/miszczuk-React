@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import Loading from "../Spinner/Spinner";
 import { getDoc, doc } from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
-
+import { getProductById } from "../../services/firestore/products";
 
 const ItemDetailContainer = () => {
     const [products, setProducts] = useState()
@@ -16,28 +16,14 @@ const ItemDetailContainer = () => {
     useEffect( () => {
         setLoading(true)
 
-        const productRef = doc(db, 'products', itemId)
-
-        getDoc(productRef)
-            .then(snapshot => {
-                console.log(snapshot)
-                const data = snapshot.data()
-                const productAdapted = { id: snapshot.id, ...data}
-                setProducts (productAdapted)
-            })
-            .catch(error => {
-                console.log(error)
-            })
-            .finally(() => {
+        getProductById(itemId)
+            .then(products =>{
+                setProducts(products)
                 setLoading(false)
-            })
-        // getProductsById(itemId)
-        //     .then(products =>{
-        //         setProducts(products)
-        // })
-        // .catch(err =>{
-        //     console.log(err)
-        // })
+        })
+        .catch(err =>{
+            console.log(err)
+        })
 
     }, [itemId])
 

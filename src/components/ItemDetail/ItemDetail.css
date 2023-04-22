@@ -1,21 +1,16 @@
 .itemDetailStyle{
     display: flex;
-    /* flex-direction: column; */
-    /* justify-content: center; */
     align-items: center;
-    /* border:1px solid #036564; */
-    /* box-shadow: 3px 3px #036564, -1em 0 0.4em #cdb380; */
-    /* border-radius: 15px; */
-    /* width:100px; */
-    /* height: 300px; */
+  
     margin-top: 80px;
     margin-bottom: 70px;
     flex-wrap: wrap;
     justify-content: center;
 }
 .sizeImg{
-    max-width: 600px;
-    object-fit: cover;
+    width: 400px;
+    height: 350px;
+    object-fit: contain;
 }
 
 .marginTop{
@@ -25,10 +20,4 @@
     margin-top: 64px;
 }
 
-.sizeImg{
- /* max-width: 500px; */
- /* width: 300px; */
- /* height: px; */
- object-fit: cover;
- 
-}
+

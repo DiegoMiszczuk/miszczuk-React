@@ -2,14 +2,21 @@
     display: flex;
     /* align-items: center; */
     justify-content: space-evenly;
-    border: 2px white;
+    
     align-content: center;
 
 
    
    
 }
-.caca{
+.pad{
+padding: 5px;
+}
+.buttonCart{
+    width: 50px;
+    height: 30px;
+}
+.cartDetail{
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
@@ -35,4 +42,11 @@
     /* height: 100vh;
     width: 100vw; */
     /* max-height: 100vh; */
+}
+
+.rowitem{
+    border:1px solid #c4bebe;
+    margin: 6px;
+    border-radius: 5px;
+    padding: 3px 0 3px 0;
 }

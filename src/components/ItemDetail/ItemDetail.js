@@ -8,19 +8,16 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
 
     const {setNotification} = useNotification()
     const { addItem, getProductQuantity } = useCart()
-    // const [inputType, setInputType] = useState('input')
-    // const [quantity, setQuantity] = useState(0)
-
-    // const ItemCount = inputType === 'input' ? InputCount : buttonCount
+   
 
     const handleOnAdd = (quantity) => {
         const productToAdd = {
             id, name, price, quantity, stock, img
         }
-        // console.log(productToAdd)
+       
         addItem(productToAdd)
         setNotification('success',`Se agrego correctamente ${quantity} ${name}`)
-        // setQuantity(quantity)
+        
     }
 
     const productQuantity = getProductQuantity(id)
@@ -36,16 +33,11 @@ const ItemDetail = ({ id, name, img, price, category, stock, description }) => {
                 <h5>Precio: {price}</h5>
                 <footer className='ItemFooter'>
                 {
-                    // isInCart(id) ? (
-                    //     <Link className="btn btn-outline-dark marginTopButton" to='/cart'>Finalizar Compra</Link>
-                    // ) : (
+                
                         <ItemCount onAdd={handleOnAdd} stock={stock} initial={productQuantity || 1} />
                     
                     
-                    // quantity === 0 ? (<ItemCount onAdd={handleOnAdd} stock={stock} />
-                    // ) : (
-                    //     <button type="button" className="btn btn-outline-light marginTopButton">Finalizar compra</button>
-                    // )
+                    
 }
 
             </footer>

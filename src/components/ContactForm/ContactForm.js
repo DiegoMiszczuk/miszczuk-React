@@ -17,10 +17,11 @@ const ContactForm = ({ onConfirm }) => {
 
     return (
         <form className="formStyle" onSubmit={handleSubmit}>
-            <input  placeholder="Ingrese su nombre" value={name} onChange={(e) => setName(e.target.value)}/>
-            <input placeholder="Ingrese su telefono"value={phone} onChange={(e) => setPhone(e.target.value)}/>
-            <input placeholder="Ingrese su Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
-            <button>Generar orden</button>
+            <input className="margin" placeholder="Ingrese su nombre" value={name} onChange={(e) => setName(e.target.value)}/>
+            <input className="margin" placeholder="Ingrese su telefono"value={phone} onChange={(e) => setPhone(e.target.value)}/>
+            <input className="margin" placeholder="Ingrese su Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <input className="margin" placeholder="Confirme su Email" value={email} onChange={(e) => setEmail(e.target.value)}/>
+            <button type="button" className="btn btn-outline-dark">Generar orden</button>
         </form>
     )
 }
