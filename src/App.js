@@ -25,7 +25,8 @@ function App() {
               <Route path="/checkout" element={<Checkout />}/>
             </Routes>
           </CartProvider>
-        </NotificationProvider>  
+        </NotificationProvider> 
+        <CarouselFadeExample></CarouselFadeExample> 
         <Footer/>
       </BrowserRouter>
      
