@@ -25,9 +25,10 @@ function App() {
               <Route path="/checkout" element={<Checkout />}/>
             </Routes>
           </CartProvider>
-        </NotificationProvider>  
+        </NotificationProvider>        
+        <Footer/>
       </BrowserRouter>
-      <Footer/>
+     
       
     </div>
   ); 

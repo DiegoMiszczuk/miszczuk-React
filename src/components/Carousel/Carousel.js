@@ -6,7 +6,7 @@ function CarouselFadeExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://picsum.photos/1600/400"
+          src="https://firebasestorage.googleapis.com/v0/b/miszczuk-ecommerce-react.appspot.com/o/cyber-monday-5358372_1280.jpg?alt=media&token=97bd953a-384f-4a9a-8bc2-764567422875"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -17,7 +17,7 @@ function CarouselFadeExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://picsum.photos/1600/400"
+          src="https://firebasestorage.googleapis.com/v0/b/miszczuk-ecommerce-react.appspot.com/o/cyber-5244032_1280.png?alt=media&token=c1a9c13d-e645-4f57-b808-66dc10a09ed8"
           alt="Second slide"
         />
 
@@ -29,7 +29,7 @@ function CarouselFadeExample() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://picsum.photos/1600/400"
+          src="https://firebasestorage.googleapis.com/v0/b/miszczuk-ecommerce-react.appspot.com/o/FSa0aVpXMAoUt18.jpg?alt=media&token=1dc657cc-4cc9-49ca-83a0-12b486d6fe2b"
           alt="Third slide"
         />
 

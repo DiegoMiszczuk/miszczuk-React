@@ -1,12 +1,21 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-.footerBackground{
-    background-color:#6ca6a3;
-    background-repeat: no-repeat;
-    margin-bottom: 0;
-    height: 80px;
-    /* position: fixed; */
-    /* width: 100vw; */
-   }
+.footerBackground {
+  background-color: #6ca6a3;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  height: 130px;
+
+  width: 100vw;
+}
+.grid {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.iconSize {
+  font-size: 25px;
+  margin-left: 20px;
+}

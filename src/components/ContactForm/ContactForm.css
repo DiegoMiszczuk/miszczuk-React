@@ -1,10 +1,12 @@
-.formStyle{
-    display: flex;
-    flex-direction: column;
-    color: aqua;
-    width: 100px;
-   
-    align-items: center;
-   
-    
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  color: aqua;
+  width: 100px;
+
+  align-items: center;
+}
+.margin {
+  margin-top: 15px;
+  border-radius: 5px;
 }
