@@ -4,22 +4,16 @@ import "../Cart/Cart.css";
 import { BsTrash } from "react-icons/bs";
 
 const Cart = () => {
-  const {
-    cart,
-    total,
-    removeItem,
-    incrementQuantity,
-    decrementQuantity,
-    clearCart,
-  } = useCart();
-}
+  const {cart,total,removeItem,incrementQuantity,decrementQuantity,clearCart,} = useCart();
+
   return (
     <div className="textColorPpal size">
       <h1>Tu Carrito</h1>
       <div className="rowCart itemCartStyle"></div>
       <div>
         <div className="container">
-          {cart.map((prod) => {
+          {
+          cart.map((prod) => {
             return (
               <div className="row rowitem align-items-center" key={prod.id}>
                 <div className="col-2">
@@ -62,7 +56,10 @@ const Cart = () => {
                 </div>
               </div>
             );
-          })}
+          })
+    }
+
+
         </div>
       </div>
 
@@ -85,6 +82,6 @@ const Cart = () => {
       </button>
     </div>
   );
-
+  }
 
 export default Cart
