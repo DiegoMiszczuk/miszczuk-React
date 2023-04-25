@@ -1,14 +1,6 @@
 import "../../general.css";
 import { useCart } from "../../context/CartContext";
-import {
-  collection,
-  query,
-  where,
-  documentId,
-  getDocs,
-  writeBatch,
-  addDoc,
-} from "firebase/firestore";
+import {collection, query, where, documentId, getDocs,writeBatch,addDoc,} from "firebase/firestore";
 import { db } from "../../services/firebase/firebaseConfig";
 import { useState } from "react";
 import { useNotification } from "../../Notification/NotificationService";
